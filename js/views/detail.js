@@ -1,0 +1,1 @@
+Escuela.Views.Detail = Backbone.View.extend({});

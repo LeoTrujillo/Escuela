@@ -1,5 +1,8 @@
-Escuela = {}; //crear un namespaces un objeto literal en js para poner los elementos en el global
+$(function (){
+  Escuela.app = new Escuela.Router();
+});
 
+/*
 Escuela.Alumno = Backbone.Model.extend({});
 
 Escuela.Alumnos = Backbone.Collection.extend({
@@ -65,3 +68,5 @@ Escuela.app = new Escuela.Router();
 Backbone.history.start();
 
 window.Escuela = Escuela;   //dejamos el objeto Escuela en el global para poder instanciar
+
+*/

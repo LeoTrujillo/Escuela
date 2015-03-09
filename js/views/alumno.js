@@ -1,0 +1,1 @@
+Escuela.Views.Alumno = Backbone.View.extend({});

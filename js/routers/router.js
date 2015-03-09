@@ -1,0 +1,1 @@
+Escuela.Router = Backbone.Router.extend({});

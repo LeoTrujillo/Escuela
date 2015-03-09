@@ -1,0 +1,56 @@
+{
+  "Primaria":{
+    "maestro": "Hipo potamo",
+    "generacion" :2015,
+    "alumnos" : [
+      {
+        "nombre" : "Madara Uchiha",
+        "grupo" : "Primero A",
+        "turno" : "Vespertino",
+        "nivel" : "Primaria",
+        "foto" : "images/madara.jpg"
+      },
+      {
+        "nombre" : "Segundo alumno",
+        "grupo" : "Segundo A",
+        "turno" : "Vespertino",
+        "nivel" : "Primaria",
+        "foto" : "images/"
+      },
+      {
+        "nombre" : "Tercer Alumno",
+        "grupo" : "Tercero A",
+        "turno" : "Matutino",
+        "nivel" : "Primaria",
+        "foto" : "images/"
+      }
+    ]
+  },
+  "Secundaria":{
+    "maestro": "Concha Queta",
+    "generacion" :2015,
+    "alumnos" : [
+      {
+        "nombre" : "Primer alumno",
+        "grupo" : "Primero A",
+        "turno" : "Vespertino",
+        "nivel" : "Secundaria",
+        "foto" : "images/madara.jpg"
+      },
+      {
+        "nombre" : "Segundo alumno",
+        "grupo" : "Segundo A",
+        "turno" : "Vespertino",
+        "nivel" : "Secundaria",
+        "foto" : "images/"
+      },
+      {
+        "nombre" : "Tercer Alumno",
+        "grupo" : "Tercero A",
+        "turno" : "Matutino",
+        "nivel" : "Secundaria",
+        "foto" : "images/"
+      }
+    ]
+  }
+}
