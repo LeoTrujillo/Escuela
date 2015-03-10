@@ -1,3 +1,6 @@
-Escuela.Collections.Alumnos = Backbone.Collection.extend({
-  model : Escuela.Models.Alumno
+var Backbone = require('backbone'),
+    Alumno = require('../models/alumno');
+
+module.exports = Backbone.Collection.extend({
+  model : Alumno
 });

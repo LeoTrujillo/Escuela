@@ -1,4 +1,6 @@
 /*
 Modelo de alumno
  */
-Escuela.Models.Alumno = Backbone.Model.extend({});
+var Backbone = require('backbone');
+
+module.exports = Backbone.Model.extend({});

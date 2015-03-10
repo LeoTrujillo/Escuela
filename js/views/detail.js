@@ -1,4 +1,8 @@
-Escuela.Views.Detail = Backbone.View.extend({
+var Backbone   = require('backbone'),
+    Handlebars = require('handlebars'),
+    $          = require('jquery');
+
+module.exports = Backbone.View.extend({
   el : $(".details"),
 
   template : Handlebars.compile($("#detail-template").html()),
