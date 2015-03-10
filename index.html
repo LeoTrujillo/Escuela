@@ -131,8 +131,9 @@
       </li>
     </ul -->
     <div id="niveles"></div>
-    <div class="listalumnos">
-      <ul class="nav nav-pills nav-stacked col-sm-4"></ul>
+    <div class="lista-al">
+      <ul class="list nav nav-pills nav-stacked col-sm-4">
+      </ul>
     </div>
     <div class="details"></div>
   </div>
@@ -157,7 +158,7 @@
 <script type="text/x-handlebars-template" id="alumno-template">
     <div class="row item">
           <span class="col-sm-6">
-            {{nombre}}
+            {{name}}
           </span>
           <span class="col-sm-6">
             <a href=""><i class="fa fa-plus-circle"></i></a>
@@ -174,7 +175,7 @@
           <img src="{{foto}}" alt="..." class="img-thumbnail" width="200">
         </div>
         <div class="col-sm-6">
-          <h1>Alumno 9</h1>
+          <h1>{{name}}</h1>
           <p><span class="info-data"><i class="fa fa-group"></i> {{grupo}}</span></p>
           <p><span class="info-data"><i class="fa fa-clock-o"></i> {{turno}}</span></p>
           <p><span class="info-data"><i class="fa fa-male"></i> {{nivel}}</span></p>

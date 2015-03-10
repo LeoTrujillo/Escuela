@@ -1,7 +1,7 @@
 Escuela.Router = Backbone.Router.extend({
   routes:{
     "" : "index", //solo me mostrara los niveles es decir  primaria y secundaria
-    "nivel" : "nivel/:nombre"
+    "nivel/:name" : "nivel"
   },
 
   initialize : function (){
@@ -15,8 +15,22 @@ Escuela.Router = Backbone.Router.extend({
 
     Backbone.history.start();
   },
+  //function index
   index : function (){
     this.fetchData();
+  },
+  //function nivel
+  nivel : function (name){
+    if (Object.keys(this.jsonData).length === 0) {
+      var self = this;
+
+      this.fetchData().done(function () {
+        self.addAlumnos(name);
+      });
+
+    } else {
+      this.addAlumnos(name);
+    }
   },
   //function fetchData
   fetchData : function (){
@@ -31,6 +45,28 @@ Escuela.Router = Backbone.Router.extend({
           };
         };
     });
+  },
+  //function addAlumnos
+  addAlumnos : function (name){
+    this.alumnos.reset();
+
+    this.current.nivel = this.jsonData[name];
+    this.current.nivel.alumnos.forEach(this.addAlumno, this);
+
+  },
+  //function addAlumno
+  addAlumno : function (alumno){
+    var nivel = this.current.nivel;
+
+    this.alumnos.add(new Escuela.Models.Alumno({
+      nivel_name : nivel.name,
+      nivel_maestro : nivel.maestro,
+      name : alumno.name,
+      grupo : alumno.grupo,
+      turno : alumno.turno,
+      nivel : alumno.nivel,
+      foto : alumno.foto
+    }));
   },
   //function addNivel
   addNivel : function (name, nivel){

@@ -4,21 +4,21 @@
     "generacion" :2015,
     "alumnos" : [
       {
-        "nombre" : "Madara Uchiha",
+        "name" : "Madara Uchiha",
         "grupo" : "Primero A",
         "turno" : "Vespertino",
         "nivel" : "Primaria",
         "foto" : "images/madara.png"
       },
       {
-        "nombre" : "Segundo alumno",
+        "name" : "Segundo alumno",
         "grupo" : "Segundo A",
         "turno" : "Vespertino",
         "nivel" : "Primaria",
         "foto" : "images/"
       },
       {
-        "nombre" : "Tercer Alumno",
+        "name" : "Tercer Alumno",
         "grupo" : "Tercero A",
         "turno" : "Matutino",
         "nivel" : "Primaria",
@@ -31,21 +31,21 @@
     "generacion" :2015,
     "alumnos" : [
       {
-        "nombre" : "Primer alumno",
+        "name" : "Primer alumno",
         "grupo" : "Primero A",
         "turno" : "Vespertino",
         "nivel" : "Secundaria",
         "foto" : "images/madara.jpg"
       },
       {
-        "nombre" : "Segundo alumno",
+        "name" : "Segundo alumno",
         "grupo" : "Segundo A",
         "turno" : "Vespertino",
         "nivel" : "Secundaria",
         "foto" : "images/"
       },
       {
-        "nombre" : "Tercer Alumno",
+        "name" : "Tercer Alumno",
         "grupo" : "Tercero A",
         "turno" : "Matutino",
         "nivel" : "Secundaria",
