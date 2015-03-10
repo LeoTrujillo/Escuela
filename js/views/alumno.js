@@ -2,7 +2,9 @@ Escuela.Views.Alumno = Backbone.View.extend({
   tagName : 'li',
 
   events : {
-    'click .fa.fa-plus-circle' : 'showAlumno'
+    'click .fa.fa-plus-circle' : 'showAlumno',
+    'click .fa.fa-edit' : 'editAlumno',
+    'click .fa.fa-close' : 'deleteAlumno'
   },
 
   template : Handlebars.compile($("#alumno-template").html()),
@@ -19,5 +21,11 @@ Escuela.Views.Alumno = Backbone.View.extend({
   showAlumno : function (){
     Escuela.app.details.model.set(this.model.toJSON());
     return false;
+  },
+  editAlumno : function (){
+    alert("editar a este alumno" )
+  },
+  deleteAlumno: function (){
+     alert("eliminar a este alumno" )
   }
 });
