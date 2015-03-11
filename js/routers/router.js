@@ -1,4 +1,14 @@
-Escuela.Router = Backbone.Router.extend({
+var Backbone      = require('backbone'),
+    Niveles       = require('../collections/niveles'),
+    Alumnos       = require('../collections/alumnos'),
+    Nivel         = require('../models/nivel'),
+    Alumno        = require('../models/alumno'),
+    ListView      = require('../views/list'),
+    DetailView    = require('../views/detail'),
+    NivelesView   = require('../views/niveles'),
+    $             = require('jquery');
+
+module.exports = Backbone.Router.extend({
   routes:{
     "" : "index", //solo me mostrara los niveles es decir  primaria y secundaria
     "nivel/:name" : "nivel"
@@ -7,11 +17,11 @@ Escuela.Router = Backbone.Router.extend({
   initialize : function (){
     this.current = {};
     this.jsonData = {};
-    this.niveles = new Escuela.Collections.Niveles();
-    this.alumnos = new Escuela.Collections.Alumnos();
-    this.alumnolista = new Escuela.Views.List({collection: this.alumnos});
-    this.nivellista = new Escuela.Views.Niveles({collection: this.niveles});
-    this.details = new Escuela.Views.Detail({model: new Escuela.Models.Alumno()});
+    this.niveles = new Niveles();
+    this.alumnos = new Alumnos();
+    this.alumnolista = new ListView({collection: this.alumnos});
+    this.nivellista = new NivelesView({collection: this.niveles});
+    this.details = new DetailView({model: new Alumno()});
 
     Backbone.history.start();
   },
@@ -58,7 +68,7 @@ Escuela.Router = Backbone.Router.extend({
   addAlumno : function (alumno){
     var nivel = this.current.nivel;
 
-    this.alumnos.add(new Escuela.Models.Alumno({
+    this.alumnos.add(new Alumno({
       nivel_name : nivel.name,
       nivel_maestro : nivel.maestro,
       name : alumno.name,
@@ -70,7 +80,7 @@ Escuela.Router = Backbone.Router.extend({
   },
   //function addNivel
   addNivel : function (name, nivel){
-    this.niveles.add(new Escuela.Models.Nivel({
+    this.niveles.add(new Nivel({
         name : name,
         maestro : nivel.maestro
       }));

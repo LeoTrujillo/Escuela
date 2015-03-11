@@ -3,7 +3,7 @@ var Backbone   = require('backbone'),
     $          = require('jquery'),
     app        = Backbone.app;
 
-Escuela.Views.Alumno = Backbone.View.extend({
+module.exports = Backbone.View.extend({
   tagName : 'li',
 
   events : {
