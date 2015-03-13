@@ -1,4 +1,9 @@
-Escuela.Views.Alumno = Backbone.View.extend({
+var Backbone   = require('backbone'),
+    Handlebars = require('handlebars'),
+    $          = require('jquery'),
+    app        = Backbone.app;
+
+module.exports = Backbone.View.extend({
   tagName : 'li',
 
   events : {
@@ -19,7 +24,7 @@ Escuela.Views.Alumno = Backbone.View.extend({
     return this;
   },
   showAlumno : function (){
-    Escuela.app.details.model.set(this.model.toJSON());
+    Backbone.app.details.model.set(this.model.toJSON());
     return false;
   },
   editAlumno : function (){

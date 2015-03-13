@@ -1,4 +1,10 @@
-Escuela.Views.Niveles = Backbone.View.extend({
+var Backbone   = require('backbone'),
+    Handlebars = require('handlebars'),
+    NivelView  = require('../views/nivel'),
+    $          = require('jquery');
+
+
+module.exports = Backbone.View.extend({
   el : $("#niveles"),
 
   template : Handlebars.compile($("#nivel-template").html()),
@@ -10,7 +16,7 @@ Escuela.Views.Niveles = Backbone.View.extend({
     this.collection.forEach(this.addOne, this);
   },
   addOne : function (nivel){
-    var nivelView = new Escuela.Views.Nivel({ model:nivel });
+    var nivelView = new NivelView({ model:nivel });
     this.$el.append(nivelView.render().el);
   }
 });

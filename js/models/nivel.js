@@ -1,4 +1,6 @@
 /*
 Modelo de nivel , es decir puede ser primaria, secundaria, preparatoria
  */
-Escuela.Models.Nivel = Backbone.Model.extend({});
+var Backbone = require ('backbone');
+
+module.exports = Backbone.Model.extend({});

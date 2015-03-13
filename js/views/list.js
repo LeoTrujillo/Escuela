@@ -1,4 +1,8 @@
-Escuela.Views.List = Backbone.View.extend({
+var Backbone = require('backbone'),
+  $ = require('jquery'),
+  AlumnoView = require('../views/alumno');
+
+module.exports = Backbone.View.extend({
   el : $(".lista-al > .list"),
 
   initialize : function (){
@@ -11,7 +15,7 @@ Escuela.Views.List = Backbone.View.extend({
   },
   addOne : function (alumno){
 
-    var alumnoView = new Escuela.Views.Alumno({ model : alumno});
+    var alumnoView = new AlumnoView({ model : alumno});
     this.$el.append(alumnoView.render().el);
 
   },

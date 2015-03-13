@@ -1,3 +1,6 @@
-Escuela.Collections.Niveles = Backbone.Collection.extend({
-  model : Escuela.Models.Nivel
+var Backbone = require('backbone'),
+    Nivel = require('../models/nivel');
+
+module.exports = Backbone.Collection.extend({
+  model : Nivel
 });
