@@ -1,55 +1,76 @@
 {
   "Primaria":{
-    "maestro": "Hipo potamo",
+    "maestro": "Konoha",
     "generacion" :2015,
     "alumnos" : [
       {
         "name" : "Madara Uchiha",
         "grupo" : "Primero A",
         "turno" : "Vespertino",
-        "nivel" : "Primaria",
-        "foto" : "images/madara.png"
+        "nivel" : "Hokage",
+        "foto" : "images/madara.jpg"
       },
       {
-        "name" : "Segundo alumno",
+        "name" : "Hashirama Senju",
         "grupo" : "Segundo A",
         "turno" : "Vespertino",
-        "nivel" : "Primaria",
-        "foto" : "images/"
+        "nivel" : "Primer Hokage",
+        "foto" : "images/hashirama.jpg"
       },
       {
-        "name" : "Tercer Alumno",
+        "name" : "Tobirama Senju",
         "grupo" : "Tercero A",
         "turno" : "Matutino",
-        "nivel" : "Primaria",
-        "foto" : "images/"
+        "nivel" : "Segundo Hokage",
+        "foto" : "images/tobirama.jpg"
+      },
+      {
+        "name" : "Sarutobi",
+        "grupo" : "Cuarto A",
+        "turno" : "Matutino",
+        "nivel" : "Tercer Hokage",
+        "foto" : "images/sarutobi.jpg"
+      },
+      {
+        "name" : "Minato Uzumaki",
+        "grupo" : "Quinto A",
+        "turno" : "Matutino",
+        "nivel" : "Cuarto Hokage",
+        "foto" : "images/minato.jpg"
       }
     ]
   },
   "Secundaria":{
-    "maestro": "Concha Queta",
+    "maestro": "Cualquier aldea",
     "generacion" :2015,
     "alumnos" : [
       {
-        "name" : "Primer alumno",
+        "name" : "Konan",
         "grupo" : "Primero A",
         "turno" : "Vespertino",
         "nivel" : "Secundaria",
-        "foto" : "images/madara.jpg"
+        "foto" : "images/konan.jpg"
       },
       {
-        "name" : "Segundo alumno",
+        "name" : "Pain",
         "grupo" : "Segundo A",
         "turno" : "Vespertino",
         "nivel" : "Secundaria",
-        "foto" : "images/"
+        "foto" : "images/pain.jpg"
       },
       {
-        "name" : "Tercer Alumno",
+        "name" : "Kakashi",
         "grupo" : "Tercero A",
         "turno" : "Matutino",
         "nivel" : "Secundaria",
-        "foto" : "images/"
+        "foto" : "images/kakashi.jpg"
+      },
+      {
+        "name" : "Kushina",
+        "grupo" : "Tercero A",
+        "turno" : "Matutino",
+        "nivel" : "Secundaria",
+        "foto" : "images/kushina.jpg"
       }
     ]
   }
